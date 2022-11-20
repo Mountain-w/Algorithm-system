@@ -1,1 +1,2 @@
 initialization
+home_initialization
