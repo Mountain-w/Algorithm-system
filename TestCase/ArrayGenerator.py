@@ -1,4 +1,6 @@
 import random
+
+
 class ArrayGenerator:
     @staticmethod
     def generate_ordered_array(n):
@@ -6,4 +8,4 @@ class ArrayGenerator:
 
     @staticmethod
     def generate_random_array(n, start, end):
-        return [random.randint(start, end-1) for _ in range(n)]
+        return [random.randint(start, end - 1) for _ in range(n)]
