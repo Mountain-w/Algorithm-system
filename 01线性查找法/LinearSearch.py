@@ -6,6 +6,6 @@ def search(data: list, target):
 
 
 if __name__ == '__main__':
-    from TestCase.ArrayGenerator import ArrayGenerator
+    from Utils.ArrayGenerator import ArrayGenerator
     data = ArrayGenerator.generate_ordered_array(20)
     print(search(data, 16))

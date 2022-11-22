@@ -10,6 +10,6 @@ def select_sort(data: list):
 
 
 if __name__ == '__main__':
-    from TestCase.ArrayGenerator import ArrayGenerator
+    from Utils.ArrayGenerator import ArrayGenerator
     data = ArrayGenerator.generate_random_array(10, 0, 10000)
     print(select_sort(data))

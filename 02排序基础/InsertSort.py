@@ -26,7 +26,7 @@ def insert_sort_2(data: list):
 
 
 if __name__ == '__main__':
-    from TestCase.ArrayGenerator import ArrayGenerator
+    from Utils.ArrayGenerator import ArrayGenerator
 
     data = ArrayGenerator.generate_random_array(1000, 0, 100)
     data1 = data.copy()
