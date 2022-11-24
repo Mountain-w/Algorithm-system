@@ -22,7 +22,7 @@ class ArrayStack(Stack):
         return self.array.remove_last()
 
     def peek(self):
-        return self.array[-1]
+        return self.array[self.get_size()-1]
 
     def __str__(self):
         return str(self.array)
