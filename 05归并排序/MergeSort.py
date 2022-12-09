@@ -1,3 +1,4 @@
+from Utils.Tools import timer
 def merge(arr, left, mid, right, temp):
     index = 0
     l_p = left
@@ -32,7 +33,7 @@ def _merge_sort(arr, left, right, temp, level):
     if arr[mid] > arr[mid + 1]:  # 对于左右两边已经有序的情况就不调用合并，优化有序数组的情况
         merge(arr, left, mid, right, temp)
 
-
+@timer
 def merge_sort(arr):
     left = 0
     right = len(arr) - 1

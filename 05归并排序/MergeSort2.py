@@ -1,4 +1,6 @@
 import random
+from Utils.Tools import timer
+from MergeSort import merge_sort as merge_sort_1
 
 
 def merge(arr, left, mid, right, temp):
@@ -26,6 +28,7 @@ def merge(arr, left, mid, right, temp):
         left += 1
 
 
+@timer
 def merge_sort(arr):
     length = len(arr)
     temp = [0] * length
@@ -46,7 +49,8 @@ def merge_sort(arr):
 if __name__ == '__main__':
     from Utils.ArrayGenerator import ArrayGenerator
 
-    array = ArrayGenerator.generate_random_array(random.randint(4, 20), 0, 100)
-    print(array)
+    array = ArrayGenerator.generate_random_array(random.randint(100, 200), 0, 100)
+    array_2 = array.copy()
+    print(len(array))
     merge_sort(array)
-    print(array)
+    merge_sort_1(array_2)
