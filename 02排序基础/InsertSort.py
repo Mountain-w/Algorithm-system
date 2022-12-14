@@ -1,6 +1,6 @@
 import random
 
-from TestCase.Helper import timer
+from Utils.Helper import timer
 
 
 @timer
